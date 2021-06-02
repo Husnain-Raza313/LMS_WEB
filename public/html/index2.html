@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <title>Homepage</title>
+
+    <style type="text/css">
+    	
+    	#header{
+
+    		color:white;
+    		padding: 10px;
+    		height: 70px; 
+    		font-style:"Times New Roman";
+    		font-size: 14px;
+    		margin-bottom: 0%;
+    		
+    		border-bottom: 3px outset blue;
+
+    	}
+    #logo {
+
+    	margin-left: 10px;
+    	padding-right: 10px;
+    	height: 50px;
+    }
+
+    .nav-item{
+
+    	padding-left: 1px;
+    	font-weight: bold;
+    	color:white;
+    }
+    #logo-caption, .nav1{
+    	color:white;
+    }
+    .nav1:hover{
+
+    	color:red;
+    }
+
+    .nav1:active{
+    	color:white;
+    	background-color: skyblue;
+    	font-weight: bold;
+    	padding-top:5px;
+    	padding-bottom:5px; 
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+    #sidebar{
+
+    	background-color: #00008b;
+    	position: sticky;
+    	top:0%;
+    	float: left;
+ 
+
+    	border: 4px outset white;
+    	border-radius: 4px;
+    	border-left: none;
+    	width: 18%;
+
+    	
+    	
+    	
+
+    
+    }
+
+   #bg-image {
+  	
+		position: absolute;
+  		left: 10%;
+  		top: 50%;
+  		z-index: -1;
+			
+		background-color: white;
+		height: 100%;
+		width: 85%;
+  opacity: 0.6;
+
+
+}
+
+	body{
+
+			
+		background-color: white;
+		
+
+	}
+	
+
+
+	.slider:hover{
+		opacity: 0.8;
+		
+	}
+
+	#slider{
+		
+
+		border: 3px solid black;
+		border-bottom: 0px groove white;
+
+
+	}
+	#bckg-img{
+
+		background-image:url("images/back-nust.png");
+		background-repeat: no-repeat;
+		
+
+	}
+	#bckg-img:hover{
+
+		opacity: 0.6;
+	}
+
+	.lside{
+		width:40%;
+		height: 100%;
+
+	}
+	.rside{
+
+		width: 60%;
+	}
+	.idpic{
+
+
+		
+	}
+	#id-img{
+
+	
+
+	}
+	.student-table{
+
+		border:2px solid #00008b;
+		width: 120%;
+	}
+	.announcement{
+
+		background-color: #e6eeff;
+
+		width: 73%;
+		border:4px inset grey;
+		border-radius: 0px;
+		margin-left:21%;
+		margin-right: 30%;
+		margin-top: 1%;
+	}
+		.mid{
+
+		margin-left:27%;
+		margin-right: 30%;
+		
+		padding-bottom: 3%;
+
+
+		
+
+		
+
+		background-color: rgba(255,255,255,0.8);
+		width: 60%;
+		border:3px solid skyblue;
+		border-radius: 20px;
+
+	}
+	.outer-mid{
+
+		background-image: url("images/nust-wallpaper.jpg");
+		
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 2%;
+	}
+	.faculty{
+
+		opacity:0.9;
+	}
+	.teacher-table{
+
+		border:2px solid orange;
+	}
+	.footer{
+		background-color: #00008b;
+		margin-top: 3%;
+		color: white;
+		border-top: 5px inset blue;
+		padding-top: 5%;
+		padding-left: 8%;
+
+	}
+
+	#option-home:active, #option-ann:active, #option-faculty:active, #option-contact:active{
+
+		background-color: rgba(0,0,0,0.8);
+		font-size: 20px;
+
+	}
+
+
+    </style>
+
+    	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <script type="text/javascript">
+   	
+   	 /************************************JQUERY****************************************/
+
+
+       /* $(document).ready(function(){
+
+                alert("PAge World!");
+            $("#show").click(function(){
+                   // var obj1={emailid:$('#email').val() ,
+                     //         password: $('#password').val() };
+                    //var obj1=JSON.stringify(obj);
+
+                    alert("Hello World!");
+                   //$("#disp").append('<p>Course id is : </p>'+obj.firstName);
+                $.get("/show-courses", function(item2){
+
+                   // console.log(item2);
+
+                    // alert("Hello World!");
+
+                    course=JSON.parse(item2);
+                    alert("HELLOOOOOOOO"+course.[0]);
+                     $.each(course, function(i, field){
+                          $(".show-courses").append(i+" "+field.[i] + " ");
+                                                         });
+
+
+                    //course=JSON.stringify(item1);
+                  //  $("#disp").append('<p>Course id is : </p>'+course.id);
+                   // $("#disp").append('<p>Course name is : </p>'+course.firstName);
+                //    alert("<p>Course id is : </p>"+course.firstName);
+                 // $("#disp").append('<p>Email is: </p>'+course.emailid);
+                  //$("#disp").append('<p>Password is: </p>'+course.password);
+
+
+                });
+            });
+      });   */
+
+      $(document).ready(function(){
+
+
+/*
+                             
+                      //*********************STUDENT PROFILE WORKING******************
+
+    $.get("/student-info", function(info){
+
+
+    var data=JSON.parse(info);
+                alert("STUDENT ID is : "+data.emailid);
+       // $("#name").append('<p></p>'+data.uname);
+
+
+
+});
+                          //*************************Faculty Profile********************
+
+                   $.get("/faculty-info", function(info){
+
+
+    var data=JSON.parse(info);
+                alert("Faculty name is : "+data.name);
+       // $("#name").append('<p></p>'+data.uname);
+
+
+
+});
+
+*/
+             
+  $("#btn1").click(function(){
+
+              alert("Overall Courses Button Working");
+                   
+            });
+
+
+
+//*/
+
+
+
+      })
+
+
+         /**********************************************************************************/
+
+   </script>
+
+    
+    
+ 
+
+  </head>
+  <body>
+
+  	<div id="slider">
+  		<div id="bckg-img">
+			  	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100 slider" src="/images/eeDept.jpg" alt="First slide" height="300px">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100 slider" src="/images/MCS-13.jpg" alt="Second slide" height="300px">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100 slider" src="/images/main-office.jpg" alt="Third slide" height="300px">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only"></span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only"></span>
+			  </a>
+				</div>
+			</div>	
+	</div>
+
+
+  	<nav class="navbar navbar-expand-lg" id="header" style="background-color: #00008b">
+  <a class="navbar-brand" href="#"><img src="/images/logonust1.png" id="logo"><b id="logo-caption">Defining Futures</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="nav1">Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/html/course-reg.html"><span class="nav1">Course Registration</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/html/Attendance.html"><span class="nav1">Attendance</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="/html/Fee Details.html"><span class="nav1">Account Inquiry</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/html/Grades.html"><span class="nav1">Grades</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+   	<div class="outer-mid">
+	
+		<div class="d-flex flex-column flex-shrink-0 p-3 text-white my-5" id="sidebar" >
+	    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+	      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+	      <span class="fs-4">Dashboard</span>
+	    </a>
+	    <hr>
+	    <ul class="nav nav-pills flex-column mb-auto">
+	      <li class="">
+	        <a href="#" class="nav-link text-white" id="option-home">
+	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+	          Home
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#announcement" class="nav-link text-white" id="option-ann">
+	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+	          Announcements
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#faculty" class="nav-link text-white" id="option-faculty">
+	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+	          Faculty
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#contact" class="nav-link text-white" id="option-contact">
+	          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+	          Contact Us
+	        </a>
+	      </li>
+	      
+	    </ul>
+
+	  
+		</div>
+
+
+   		<!--<img id="bg-image" src="nust-wallpaper.jpg"> -->
+   		
+		  <div class="mid  ">
+		  	<center><h3 style="margin-top: 10px">STUDENT PROFILE</h3></center>
+		  	<hr>
+		  	<div class="row" style="padding-top: 3%">
+		  		<div class="col-lg-3 idpic"><img src="/images/user.png" height="180px" width="180px" id="id-img"></div>
+		  		<div class="col-lg-9 rside"> 
+
+		  			<table class="table table-striped ">
+					  <thead>
+					    <tr>
+					      <th scope="col">Name</th>
+					      <th scope="col"></th>
+					  
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="col">Course</th>
+					      <th scope="col"></th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Registration No</th>
+					      <th scope="col"></th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Current Semester</th>
+					      <th scope="col"></th>
+					    </tr>
+					    <tr>
+					      <th scope="col">GPA</th>
+					      <th scope="col"></th>
+					    </tr>
+					  </tbody>
+					</table>
+
+
+		  		</div>	
+		  	</div>
+		  		
+
+		</div>
+			<button id="btn1">Press me!</button>
+
+		<div class="announcement container" id="announcement">
+	
+		  	<center><h2>Announcements</h2></center>
+		  	<hr>
+		  	<h3>HEAD OF DEPT</h3>
+		  	<blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas at quis ratione et, obcaecati? Quas, dicta temporibus, distinctio pariatur minima maxime atque. Tenetur consectetur iste odio, ullam blanditiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas at quis ratione et, obcaecati? Quas, dicta temporibus, distinctio pariatur minima maxime atque. Tenetur consectetur iste odio, ullam blanditiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas at quis ratione et, obcaecati? Quas, dicta temporibus, distinctio pariatur minima maxime atque. Tenetur consectetur iste odio, ullam blanditiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas at quis ratione et, obcaecati? Quas, dicta temporibus, distinctio pariatur minima maxime atque. Tenetur consectetur iste odio, ullam blanditiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas at quis ratione et, obcaecati? Quas, dicta temporibus, distinctio pariatur minima maxime atque. Tenetur consectetur iste odio, ullam blanditiis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas at quis ratione et, obcaecati? Quas, dicta temporibus, distinctio pariatur minima maxime atque. Tenetur consectetur iste odio, ullam blanditiis.
+		  	 					
+		  	 						</blockquote>
+		 </div>
+		 		  <div class="announcement container faculty" id="faculty">
+		  	<h3 style="margin-top: 10px">Faculty Info</h3>
+		  	<hr>
+		  	<div class="row">
+		  		<div class="col-lg-3 idpic"><img src="/images/user.png" height="180px" width="180px" id="id-img"></div>
+		  		<div class="col-lg-9 rside"> 
+
+		  			<table class="table table-striped student-table teacher-table">
+					  <thead>
+					    <tr>
+					      <th scope="col">Name</th>
+					      <th scope="col"></th>
+					  
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="col">Qualification</th>
+					      <th scope="col"></th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Years Of Experience</th>
+					      <th scope="col"></th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Nationality</th>
+					      <th scope="col"></th>
+					    </tr>
+					  </tbody>
+					</table>
+
+
+		  		</div>	
+		  	</div>
+		  		<hr>
+		  	<div class="row">
+		  		<div class="col-lg-3 idpic"><img src="/images/user.png" height="180px" width="180px" id="id-img"></div>
+		  		<div class="col-lg-9 rside"> 
+
+					<table class="table table-striped student-table teacher-table">
+					  <thead>
+					    <tr>
+					      <th scope="col">Name</th>
+					      <th scope="col"></th>
+					  
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="col">Qualification</th>
+					      <th scope="col"></th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Years Of Experience</th>
+					      <th scope="col"></th>
+					    </tr>
+					    <tr>
+					      <th scope="col">Nationality</th>
+					      <th scope="col"></th>
+					    </tr>
+					  </tbody>
+					</table>
+
+
+		  		</div>	
+		  	</div>
+
+		</div>
+
+		<div class="container-fluid footer" id="contact">
+		  	
+		  	<div class="row">
+		  		<div class="col-lg-3" id="info" >
+		  			<ul>
+						<h3>Info</h3>
+						<li>About Us</li>
+						<li>Support</li>		  			
+
+		  			</ul>
+		  		</div>
+		  		<div class="col-lg-4 ">
+		  			<ul>
+						<h3>Contact Us</h3>
+						<li>NUST - LMS @ SEECS NUST H-12 Islamabad</li>
+						<li>E-mail : lms@seecs.edu.pk</li>
+						<li><a href="https://lms.nust.edu.pk/lms_website/lms_team.php" target="_blank">LMS Focal Person (Institute Wise)</a></li>	  			
+
+		  			</ul>
+		  		</div>
+		  		<div class="col-lg-5">
+		  			
+						<h4>Social Links</h3>
+						<ul class="fh5co-footer-links">
+						<span><a href="https://www.facebook.com/nationaluniversityofsciencesandtechnology" target="_blank"><img src="https://lms.nust.edu.pk/lms_website/images/f-icon.png"></a></span>
+ 
+						<span><a href="https://twitter.com/Official_NUST" target="_blank"><img src="https://lms.nust.edu.pk/lms_website/images/t-icon.png"></a></span>
+ 
+						<span><a href="https://www.instagram.com/nustgram/" target="_blank"><img src="https://lms.nust.edu.pk/lms_website/images/Instagram-icon-27x27.png"></a></span>
+ 
+						<span><a href="https://www.youtube.com/c/NUSTOfficial" target="_blank"><img src="https://lms.nust.edu.pk/lms_website/images/you-icon.png"></a></span>
+ 
+						<span><a href="#"><img src="https://lms.nust.edu.pk/lms_website/images/android-icon-red.png"></a></span>						
+
+					</ul>		  			
+
+		  			
+		  		</div>	
+		  	</div>
+		  		
+
+		</div>
+
+	</div>
+
+		
+ 
+
+
+
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">  	
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"> 	
+    </script>
+     
+  </body>
+</html>
+
+
+
+

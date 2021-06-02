@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <title>Campus Management System</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+$(document).ready(function(){
+
+  $(".attendance-show-field").empty();
+
+
+$.get("/attendance-show", function(item2){
+
+// console.log(item2);
+
+// alert("Hello World!");
+
+attendance=JSON.parse(item2);
+// alert("HELLOOOOOOOO"+course.firstName);
+$.each(attendance, function(i, field){
+ $(".attendance-show-field").append("Attendance = "+field.firstName + " ");
+                                });
+
+
+});
+});
+
+  <style type="text/css">
+    	
+    #header{
+
+      color:white;
+      padding: 10px;
+      height: 70px; 
+      font-style:"Times New Roman";
+      font-size: 14px;
+      margin-bottom: 0%;
+      
+      border-bottom: 3px outset blue;
+
+    }
+  </style>
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="header" style="background-color: #00008b">
+    <div class="container-fluid">
+      <img src="/images/CMS.png" width="80" alt="CMS">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/html/course-reg.html">Course Registration</a></li>
+              <li><a class="dropdown-item" href="/html/Fee Details.html">Account Inquiry</a></li>
+              <li><a class="dropdown-item" href="/html/Grades.html">Grades</a></li>
+              <li><a class="dropdown-item" href="/html/Transcript.html">Unofficial Transcript</a></li>
+
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/html/index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Attendance</li>
+    </ol>
+  </nav>
+  <b>The Concept of Attendance</b>
+  <div>Attendance of university students at their timetabled teaching sessions is usually associated with higher
+     levels of educational attainment. Attendance is usually considered to reflect students’ level of engagement 
+     with their course and to be critical to student success; despite the potential for technological alternatives, 
+     lectures and other face-to-face sessions still tend to be the primary method of teaching at university.<br><br>
+  </div>
+  <br>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/EmptyClass.jpg" class="d-block w-100" alt="..." height="500px">
+      </div>
+    </div>
+  </div>
+  <br>
+  <table class="table caption-top">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Date</th>
+        <th scope="col">Attendance</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <!-- insert date and attendance entries below -->
+        <td></td> 
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">12</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">13</th>
+        <td></td>
+        <td></td>
+
+      </tr>
+      <tr>
+        <th scope="row">14</th>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
