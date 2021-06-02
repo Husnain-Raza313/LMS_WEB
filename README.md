@@ -1,4 +1,4 @@
-# LMS_WEB
+# LMS WEBSITE
 ![lms_snip](https://user-images.githubusercontent.com/85040899/120528490-f680ba00-c3f4-11eb-8edf-bf5bf89e5e75.PNG)
 ![course-reg](https://user-images.githubusercontent.com/85040899/120528499-fa144100-c3f4-11eb-97da-872f1be83b65.PNG)
 
