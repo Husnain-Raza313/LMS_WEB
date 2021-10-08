@@ -12,10 +12,10 @@ https://user-images.githubusercontent.com/85040899/120528863-56776080-c3f5-11eb-
 
 <h4>LMS features</h4>
 <ol >
-  <li>Login Authentication</li>
+  <li>Login</li>
   <li>Student Profile</li>
   <li>Course Registration</li>
   <li>Faculty Info</li>
   <li>Course Registration</li>
-  <li>Dealing Multiple Users simultaneously</li>
+  
 </ol>
